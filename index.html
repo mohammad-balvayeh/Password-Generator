@@ -10,6 +10,53 @@
     <title>Password Generater</title>
   </head>
   <body>
+    <div class="container">
+      <h1 class="title">Password Generater</h1>
+      <div class="show-password-wrapper">
+        <div class="show-password"></div>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <form class="form">
+        <div class="character-type">
+          <div class="area">
+            <span class="inner-title">Select the character type: </span>
+          </div>
+          <div class="area">
+            <input type="checkbox" id="Lowercase" />
+            <label for="uppercase">a-z</label>
+          </div>
+          <div class="area">
+            <input type="checkbox" id="uppercase" />
+            <label for="uppercase">A-Z</label>
+          </div>
+          <div class="area">
+            <input type="checkbox" id="symbol" />
+            <label for="uppercase">symbols</label>
+          </div>
+          <div class="area">
+            <input type="checkbox" id="number" />
+            <label for="uppercase">Numbers</label>
+          </div>
+        </div>
+
+        <div class="password-length-wrapper">
+          <label for="password-length" class="inner-title"
+            >Choose the password length:
+          </label>
+          <input
+            type="number"
+            min="1"
+            max="15"
+            id="password-length"
+            value="1"
+          />
+        </div>
+        <div class="form-btn">
+          <button class="create-btn" type="submit">Create</button>
+          <button class="reset-btn" type="reset">Reaset</button>
+        </div>
+      </form>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
