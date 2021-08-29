@@ -14,6 +14,7 @@
       <h1 class="title">Password Generater</h1>
       <div class="show-password-wrapper">
         <div class="show-password"></div>
+        <!-- <input type="text" class="show-password" /> -->
         <button class="copy-btn">Copy</button>
       </div>
       <form class="form">
@@ -22,20 +23,20 @@
             <span class="inner-title">Select the character type: </span>
           </div>
           <div class="area">
-            <input type="checkbox" id="Lowercase" />
-            <label for="uppercase">a-z</label>
+            <input type="checkbox" id="lowercase" name="lowercase" />
+            <label for="lowercase">a-z</label>
           </div>
           <div class="area">
-            <input type="checkbox" id="uppercase" />
+            <input type="checkbox" id="uppercase" name="uppercase" />
             <label for="uppercase">A-Z</label>
           </div>
           <div class="area">
-            <input type="checkbox" id="symbol" />
-            <label for="uppercase">symbols</label>
+            <input type="checkbox" id="symbol" name="symbol" />
+            <label for="symbol">symbols</label>
           </div>
           <div class="area">
-            <input type="checkbox" id="number" />
-            <label for="uppercase">Numbers</label>
+            <input type="checkbox" id="number" name="number" />
+            <label for="number">Numbers</label>
           </div>
         </div>
 
@@ -48,6 +49,7 @@
             min="1"
             max="15"
             id="password-length"
+            name="passwordLength"
             value="1"
           />
         </div>
